@@ -1,0 +1,28 @@
+// MONOCHROMATIC COLORS
+$color-white: #fff;
+$color-grey-1: #e0e3eb;
+$color-grey-2: #888b97;
+$color-grey-3: #626687;
+
+// COLOURFUL
+$primary-color: #10b981;
+$primary-dark-color: #0b9567;
+$primary-light-color: #d1fae5;
+$secondary-color: #f59e0b;
+$black-color: #1b1c57;
+$danger-color: #ef4444;
+$danger-light-color: #fee2e2;
+$info-color: #1d4ed8;
+$info-light-color: #dbeafe;
+
+.grey-2 {
+  color: $color-grey-2;
+}
+
+.grey-3 {
+  color: $color-grey-3;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}

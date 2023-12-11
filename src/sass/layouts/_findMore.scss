@@ -1,0 +1,228 @@
+.findMore {
+  width: 100%;
+  height: auto;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    margin-top: 4.8rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+
+    &-subtitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      text-align: center;
+
+      &-line {
+        background-color: $secondary-color;
+        width: 3.2rem;
+        height: 0.1rem;
+      }
+    }
+
+    &-heading {
+      text-align: center;
+      width: calc(100% - 86rem);
+
+      @media only screen and (max-width: $bp-largest) {
+        width: calc(100% - 16rem);
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  &__leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-left: 12.4rem;
+    width: 100%;
+    max-width: 58rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      align-items: center;
+    }
+
+    &-card {
+      display: flex;
+      gap: 3.2rem;
+      max-width: 58rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        gap: 10%;
+        max-width: 60%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        max-width: 75%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-largest) {
+          margin: 0;
+          gap: 10%;
+          max-width: 55rem;
+        }
+
+        &-person {
+          display: flex;
+          gap: 1.6rem;
+          margin-bottom: 1.2rem;
+          align-items: center;
+
+          & > img {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+        }
+
+        &-time {
+          display: flex;
+          gap: 1.2rem;
+          margin-top: 1.6rem;
+          align-items: center;
+        }
+      }
+
+      & > img {
+        border-radius: 1.6rem;
+
+        @media only screen and (max-width: $bp-small) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-right: 12.4rem;
+    width: 100%;
+    max-width: 58rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0;
+      width: 60%;
+      max-width: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+      width: 75%;
+    }
+
+    &-img {
+      border-radius: 1.6rem;
+      width: 100%;
+      max-width: 58rem;
+      max-height: 28rem;
+      align-self: center;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        &-person {
+          display: flex;
+          gap: 1.6rem;
+          align-items: center;
+          color: #3c4563;
+        }
+
+        & > span {
+          color: #1b1c57;
+        }
+
+        & > p {
+          color: #626687;
+        }
+      }
+
+      &-time {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+
+    & > a {
+      cursor: pointer;
+    }
+  }
+}
+
+.findMoreBlur {
+  position: relative;
+  z-index: -1;
+
+  &-1 {
+    position: absolute;
+    top: -12.5rem;
+    left: 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 65%;
+    }
+  }
+
+  &-2 {
+    position: absolute;
+    top: 13.2rem;
+    left: 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 65%;
+    }
+  }
+}

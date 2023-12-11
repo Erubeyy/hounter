@@ -1,0 +1,163 @@
+.featured {
+  width: 100%;
+  height: auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+
+  &__subtitle {
+    height: 1.8rem;
+    display: flex;
+    gap: 0.9rem;
+    margin-left: 8.3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 2rem;
+    }
+
+    &-line {
+      background-color: $secondary-color;
+      width: 3.2rem;
+      height: 0.1rem;
+      align-self: center;
+    }
+    &-text {
+      color: $secondary-color;
+      text-align: end;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 12.4rem 3.6rem 12.4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      gap: 2rem;
+      margin-left: 8.3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      margin: 1.2rem 0 3.6rem 0;
+    }
+
+    &-type {
+      display: flex;
+      gap: 2.7rem;
+      justify-content: space-between;
+      list-style: none;
+
+      @media only screen and (max-width: $bp-largest) {
+        gap: 0.5rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &-arrows {
+      display: flex;
+      gap: 1.6rem;
+      justify-content: space-between;
+
+      & > a {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  &__houseContent {
+    margin: 3.6rem 0 0 12.4rem;
+    display: flex;
+    gap: 3.2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media only screen and (min-width: 1825px) {
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 8.3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 2rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      width: 37.6rem;
+
+      @media only screen and (min-width: 1825px) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 80%;
+      }
+
+      &-img {
+        height: 38.2rem;
+        border-radius: 2.4rem;
+
+        & > span {
+          margin: 33.2rem 25rem 1.6rem 1.6rem;
+        }
+      }
+
+      &-name {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        & > h4 {
+          color: $color-grey-3;
+        }
+      }
+
+      &-person {
+        display: flex;
+        gap: 1.6rem;
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+      }
+    }
+  }
+
+  &-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-img-1 {
+    background-image: url(../../../src/assets/images/featuredHouse-1.png);
+  }
+  &-img-2 {
+    background-image: url(../../../src/assets/images/featuredHouse-2.png);
+  }
+  &-img-3 {
+    background-image: url(../../../src/assets/images/featuredHouse-3.png);
+  }
+  &-img-4 {
+    background-image: url(../../../src/assets/images/featuredHouse-4.png);
+  }
+}

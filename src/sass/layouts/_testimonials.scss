@@ -1,0 +1,135 @@
+.testimonials {
+  width: 100%;
+  margin-top: 11.3rem;
+  text-align: center;
+  margin-bottom: 12.7rem;
+  max-height: 66.4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    max-height: 100%;
+    margin-bottom: 6.35rem;
+  }
+
+  &__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-line {
+      width: 3.2rem;
+      height: 0.1rem;
+      background-color: $secondary-color;
+    }
+  }
+
+  &__title {
+    margin-top: 1.3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 80%;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 4rem;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-img {
+        border-radius: 0.8rem;
+        height: 42.9rem;
+        width: 98vw;
+        max-width: 78.4rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-card {
+        @media only screen and (max-width: $bp-medium) {
+          width: 70vw;
+          transform: translate(0, calc(-70.13% + 5rem));
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          width: 100%;
+          padding: 2rem;
+          transform: translate(0);
+        }
+
+        width: calc(100% - 17.2rem);
+        border-radius: 1.6rem;
+        background-color: $color-white;
+        padding: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        box-shadow: 0px 8px 32px 0px rgba(12, 21, 55, 0.09);
+        transform: translate(0, -70.13%);
+        text-align: initial;
+
+        &-text {
+          display: flex;
+          flex-direction: column;
+          gap: 1.6rem;
+        }
+
+        &-personReview {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-info {
+            display: flex;
+            gap: 1.6rem;
+            width: calc(100% - 20.8rem);
+
+            & > img {
+              width: 4rem;
+              height: 4rem;
+            }
+
+            & > div {
+              display: flex;
+              flex-direction: column;
+              gap: 0.4rem;
+            }
+          }
+
+          &-rate {
+            display: flex;
+            gap: 1.6rem;
+            align-items: center;
+
+            & > img {
+              width: 2.4rem;
+              height: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-img-1 {
+    background-image: url(../../../src/assets/images/review-1.png);
+  }
+
+  &-img-2 {
+    background-image: url(../../../src/assets/images/review-2.png);
+  }
+
+  &-img-3 {
+    background-image: url(../../../src/assets/images/review-3.png);
+  }
+}

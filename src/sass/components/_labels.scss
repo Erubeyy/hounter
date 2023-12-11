@@ -1,0 +1,32 @@
+.labels {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+    width: max-content;
+    height: 3.4rem;
+    border-radius: 3.2rem;
+    justify-content: center;
+    align-items: center;
+
+    &-danger {
+        color: $danger-color;
+        background-color: $danger-light-color;
+    }
+
+    &-info {
+        color: $info-color;
+        background-color: $info-light-color;
+    }
+
+    &-success {
+        color: $primary-color;
+        background-color: $primary-light-color;
+    }
+
+    &-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}

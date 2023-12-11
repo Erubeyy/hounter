@@ -1,0 +1,139 @@
+.subscribe {
+  width: 100%;
+  height: auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: calc(100% - 24.8rem);
+    max-width: 119.2rem;
+    align-items: center;
+    justify-content: center;
+    height: 31.2rem;
+    background-image: url('../../../src/assets/images/subscribe-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3.2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 85%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      & > img {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+
+    &-heading {
+      width: 35.6%;
+      text-align: center;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 80%;
+      }
+    }
+
+    &-form {
+      display: flex;
+      gap: 1.6rem;
+      padding: 0.4rem 0.4rem 0.4rem 2.4rem;
+      align-items: center;
+      width: 41.5%;
+      border-radius: 2.8rem;
+      border: 1px solid $color-grey-1;
+      height: 5.6rem;
+      background-color: $color-white;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 70%;
+      }
+
+      &-text {
+        width: 100%;
+      }
+
+      &-btn {
+        width: 100%;
+        max-width: 15.3rem;
+
+        @media only screen and (max-width: $bp-small) {
+          width: 40%;
+        }
+      }
+    }
+
+    &-img {
+      border: 2px solid $color-white;
+
+      &-1 {
+        width: 8.1rem;
+        height: 8.1rem;
+        position: absolute;
+        left: 4rem;
+        top: 3.8rem;
+      }
+
+      &-2 {
+        width: 5.4rem;
+        height: 5.4rem;
+        position: absolute;
+        left: 19.1rem;
+        top: 17.8rem;
+      }
+
+      &-3 {
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        right: 19.6rem;
+        top: 4.4rem;
+      }
+
+      &-4 {
+        width: 5.5rem;
+        height: 5.5rem;
+        position: absolute;
+        right: 6.9rem;
+        top: 19.7rem;
+      }
+
+      &-person {
+        width: 3.6rem;
+        height: 3.6rem;
+
+        &1 {
+          position: absolute;
+          left: 6.3rem;
+          top: 17.3rem;
+        }
+        &2 {
+          position: absolute;
+          left: 20rem;
+          top: 7.1rem;
+        }
+        &3 {
+          position: absolute;
+          right: 19.6rem;
+          top: 14.3rem;
+        }
+        &4 {
+          position: absolute;
+          right: 7.8rem;
+          top: 10.7rem;
+        }
+      }
+    }
+  }
+}

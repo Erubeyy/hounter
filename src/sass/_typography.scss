@@ -1,0 +1,68 @@
+.heading {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  color: $black-color;
+
+  &-2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &-3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  &-4 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.subtitle {
+  color: $black-color;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+
+  &-medium {
+    font-weight: 500;
+    line-height: normal;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+}
+
+.label {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &-regular {
+    line-height: 2.4rem;
+  }
+
+  &-small {
+    font-size: 1.2rem;
+  }
+
+  &-medium {
+    font-weight: 500;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+}

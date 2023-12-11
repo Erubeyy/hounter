@@ -1,0 +1,193 @@
+.form {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12rem;
+
+  &__content {
+    display: flex;
+    gap: 3.2rem;
+    min-height: 59.2rem;
+    justify-content: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+
+    &-left {
+      max-width: 47.8rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.8rem;
+      padding: 4rem;
+      text-align: center;
+      box-shadow: 0px 8px 32px 0px rgba(12, 21, 55, 0.09);
+      border-radius: 0.8rem;
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+      }
+
+      &-separator {
+        width: 4rem;
+        height: 0.2rem;
+        background-color: $primary-color;
+      }
+
+      &-imgContainer {
+        width: 15.73rem;
+        height: 15.45rem;
+        position: relative;
+        margin-top: 2.8rem;
+        margin-bottom: 1.77rem;
+
+        &-blur {
+          position: absolute;
+          top: -10rem;
+          left: -20rem;
+        }
+
+        &-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &-tab {
+          position: absolute;
+          top: 1.62rem;
+          left: 2.43rem;
+        }
+
+        &-hamm {
+          position: absolute;
+          top: 5.06rem;
+          right: -1.89rem;
+        }
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: 68.2rem;
+      padding: 4rem;
+      border-radius: 0.8rem;
+      box-shadow: 0px 8px 32px 0px rgba(12, 21, 55, 0.09);
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+
+      &-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        @media only screen and (max-width: $bp-largest) {
+          gap: 1.6rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          flex-direction: column;
+          align-items: self-start;
+        }
+
+        & > span {
+          max-width: 8.9rem;
+          width: 100%;
+        }
+
+        & > input {
+          padding: 1.6rem 2.4rem;
+          border-radius: 2.8rem;
+          border: 1px solid $color-grey-1;
+          max-height: 5.6rem;
+          max-width: 82.39%;
+          width: 100%;
+          z-index: 100;
+
+          @media only screen and (max-width: $bp-smallest) {
+            max-width: 100%;
+          }
+
+          &::placeholder {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $color-grey-2;
+            font-family: $font-primary;
+          }
+        }
+
+        & > img {
+          position: absolute;
+          z-index: 200;
+          top: 1.3rem;
+          right: 2.4rem;
+
+          @media only screen and (max-width: $bp-smallest) {
+            top: 4.7rem;
+          }
+        }
+      }
+
+      &-textArea {
+        height: 100%;
+        align-items: flex-start;
+        max-height: 14.4rem;
+
+        & > label {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          max-height: 5.6rem;
+        }
+
+        & > textarea {
+          padding: 1.6rem 2.4rem;
+          border-radius: 2.8rem;
+          border: 1px solid #e0e3eb;
+          display: flex;
+          width: 100%;
+          max-width: 82.39%;
+          height: 100%;
+          max-height: 14.4rem;
+
+          &::placeholder {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $color-grey-2;
+            font-family: $font-primary;
+          }
+        }
+
+        &-counter {
+          position: absolute;
+          right: 0;
+          bottom: 1.6rem;
+          text-align: center;
+        }
+      }
+
+      &-policy {
+        display: flex;
+        gap: 0.8rem;
+        padding-left: 10.6rem;
+
+        @media only screen and (max-width: $bp-large) {
+          padding: 0;
+        }
+
+        & > img {
+          align-self: self-start;
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+}

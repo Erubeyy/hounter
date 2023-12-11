@@ -1,0 +1,220 @@
+.tour {
+  width: 100%;
+  margin-top: 12rem;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    gap: 18rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__info {
+    max-width: 52.4rem;
+    margin-left: 8.4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 2.8rem 0 6.7rem 8.3rem;
+      max-width: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 2.8rem 3rem 6.7rem 8.3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 2.8rem 3rem 1rem 3rem;
+    }
+
+    &__content {
+      &-container {
+        margin-left: 4rem;
+      }
+
+      &-subtitle {
+        display: flex;
+        gap: 0.8rem;
+        height: 1.8rem;
+        margin-bottom: 1.2rem;
+
+        &-line {
+          width: 3.2rem;
+          height: 0.1rem;
+          background-color: $secondary-color;
+          align-self: center;
+        }
+      }
+
+      &-para {
+        margin-top: 1.2rem;
+        margin-bottom: 2.4rem;
+        width: calc(100% - 7.1rem);
+        opacity: 0.7;
+      }
+
+      &-detailRow {
+        display: flex;
+        width: calc(100% - 4.4rem);
+        gap: 5.3rem;
+
+        &-item {
+          width: 100%;
+          display: flex;
+          gap: 1.6rem;
+          align-items: center;
+
+          @media only screen and (max-width: $bp-small) {
+            flex-wrap: wrap;
+          }
+
+          & > span {
+            color: $color-grey-3;
+          }
+        }
+
+        &-img {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+
+      &-detailRow:nth-of-type(1) {
+        margin-top: 2.4rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &__separator {
+      max-width: 47.8rem;
+      height: 0.2rem;
+      background-color: $color-grey-1;
+      margin-top: 3.2rem;
+      margin-left: 4rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        max-width: 80%;
+      }
+    }
+
+    &__contact {
+      margin-top: 3.2rem;
+      margin-left: 4rem;
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $bp-largest) {
+        max-width: 80%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      &-seller {
+        display: flex;
+        gap: 1.6rem;
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+      }
+    }
+  }
+
+  &__images {
+    height: inherit;
+    margin-right: 12.4rem;
+    max-width: 52.8rem;
+    height: 45.9rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: fit-content;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 18.4rem;
+      left: 26rem;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
+
+    &-large {
+      max-width: 100%;
+      transform: translate(5rem);
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+      }
+    }
+
+    &-med {
+      max-width: 100%;
+      border-radius: 0.8rem;
+      transform: translate(0, -74%);
+
+      @media only screen and (max-width: $bp-small) {
+        width: 60%;
+        transform: translate(5rem, -15rem);
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
+    }
+
+    &-smallContainer {
+      width: fit-content;
+      display: flex;
+      gap: 0.8rem;
+      transform: translate(30.8rem, -260%);
+
+      @media only screen and (max-width: $bp-small) {
+        width: fit-content;
+        transform: translate(20rem, -290%);
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
+
+      &-item {
+        max-width: 100%;
+        border-radius: 0.8rem;
+      }
+    }
+  }
+}
+
+.tourBlur {
+  position: relative;
+  z-index: -1;
+
+  &-1 {
+    position: absolute;
+    top: -30.2rem;
+    right: 0;
+  }
+
+  &-2 {
+    position: absolute;
+    top: -18rem;
+    right: 0;
+  }
+}

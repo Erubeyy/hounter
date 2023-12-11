@@ -1,0 +1,16 @@
+{
+  "name": "hounter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite": "^4.4.5"
+  }
+}

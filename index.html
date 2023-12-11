@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend:300,400,500,600,900"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="src/assets/icons/hounter-favicon.png"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hounter</title>
+  </head>
+  <body>
+    <!-- HERO SECTION  -->
+    <section class="hero">
+      <div class="heroBlur">
+        <img src="./src/assets/bgBlurs/HeroLeft.svg" class="heroBlur" />
+        <img src="./src/assets/bgBlurs/HeroRight.svg" class="heroBlur" />
+      </div>
+      <div class="navbar">
+        <img src="./src/assets/logos/Logo.svg" class="navbar__logo" />
+
+        <ul class="navbar__options">
+          <li>
+            <a class="button button-outline-white" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="button button-outline-white" href="#">Article</a>
+          </li>
+          <li>
+            <a class="button button-outline-white" href="#"
+              >Property
+              <img src="./src/assets/icons/White-arrow-down.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a class="button button-outline-green" href="#"
+              ><span>Sign Up</span></a
+            >
+          </li>
+        </ul>
+        <a href="#" class="navbar__burger"
+          ><img
+            src="./src/assets/icons/Burger.svg"
+            class="navbar__burger-logo"
+            alt="burger_navbar"
+        /></a>
+      </div>
+      <div class="hero__main">
+        <div class="hero__main-content">
+          <div class="hero__main-content-title">
+            <h1 class="heading hero__main-content-title-heading">
+              find the place to live
+              <span class="heading hero__main-content-title-green">
+                your dreams
+              </span>
+              easily here
+            </h1>
+            <p class="body hero__main-content-title-grey">
+              Everything you need about finding your place to live will be here,
+              where it will be easier for you
+            </p>
+          </div>
+          <div class="hero__main-content-searchBar">
+            <img src="./src/assets/icons/Golden-Location.svg" alt="" />
+            <div class="hero__main-content-searchBar-label">
+              <span class="label label-medium"
+                >Search for the location you want!</span
+              >
+            </div>
+            <a
+              href="#"
+              class="button button-primary hero__main-content-searchBar-btn"
+            >
+              <div>
+                <span>Search</span>
+                <img
+                  src="./src/assets/icons/White-Arrow.svg"
+                  alt="white-arrow"
+                /></div
+            ></a>
+          </div>
+          <div class="hero__main-content-partnership">
+            <span class="body hero__main-content-title-grey">
+              Our Partnership
+            </span>
+            <div class="hero__main-content-partnership-companies">
+              <img
+                src="./src/assets/logos/traveloka_logo.png"
+                alt="traveloka-logo"
+              />
+              <img src="./src/assets/logos/tiket_logo.png" alt="tiket-logo" />
+              <img src="./src/assets/logos/airbnb_logo.png" alt="airbnb-logo" />
+              <img
+                src="./src/assets/logos/tripadvisor_logo.png"
+                alt="tripadvisor-logo"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero__main-img"></div>
+      </div>
+
+      <div class="hero__infoCards">
+        <div class="hero__infoCards-item">
+          <div class="hero__infoCards-item-img">
+            <img
+              class="hero__infoCards-item-img-1"
+              src="./src/assets/images/InfoCard-1.svg"
+              alt="infocard-1"
+            />
+            <img
+              class="hero__infoCards-item-img-2"
+              src="./src/assets/images/InfoCard-2.svg"
+              alt="infocard-1"
+            />
+            <img
+              class="hero__infoCards-item-img-3"
+              src="./src/assets/images/InfoCard-3.svg"
+              alt="infocard-1"
+            />
+          </div>
+          <div class="hero__infoCards-item-info hero__infoCards-item-info-1">
+            <span class="body body-medium-bold">1K+ People</span>
+            <span class="label label-small grey-2"
+              >Successfully Getting Home</span
+            >
+          </div>
+        </div>
+        <div class="hero__infoCards-item">
+          <div>
+            <img src="./src/assets/images/InfoCard-4.png" alt="infocard-4" />
+          </div>
+          <div class="hero__infoCards-item-info">
+            <span class="body body-medium-bold">56 Houses</span>
+            <span class="label label-small grey-2">Sold Monthly</span>
+          </div>
+        </div>
+        <div class="hero__infoCards-item">
+          <div class="hero__infoCards-item-img">
+            <img
+              class="hero__infoCards-item-img-1"
+              src="./src/assets/images/InfoCard-5.svg"
+              alt="infocard-5"
+            />
+          </div>
+          <div class="hero__infoCards-item-info hero__infoCards-item-info-3">
+            <span class="body body-medium-bold">4K+</span>
+            <span class="label label-small grey-2"
+              >People Looking for New Homes</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED HOUSE SECTION  -->
+    <section class="featured">
+      <div class="featured__subtitle">
+        <div class="featured__subtitle-line">&nbsp;</div>
+        <span class="featured__subtitle-text label label-regular"
+          >Our Recommendation</span
+        >
+      </div>
+      <div class="featured__navbar">
+        <h2 class="featured__navbar-title heading heading-2">Featured House</h2>
+        <ul class="featured__navbar-type">
+          <li>
+            <a class="button button-primary-light">
+              <img src="./src/assets/icons/Green-house.svg" alt="green-house" />
+              <span>House</span>
+            </a>
+          </li>
+          <li>
+            <a class="button button-outline">
+              <img
+                src="./src/assets/icons/Green-villa.svg"
+                alt="green-villa"
+              />Villa
+            </a>
+          </li>
+          <li>
+            <a class="button button-outline">
+              <img
+                src="./src/assets/icons/Green-apartment.svg"
+                alt="green-apartment"
+              />Apartment
+            </a>
+          </li>
+        </ul>
+        <div class="featured__navbar-arrows">
+          <a
+            class="button button-outline button-arrow-only"
+            id="featured-leftArrow"
+            ><img
+              src="./src/assets/icons/Inverse-green-arrow.svg"
+              alt="green-arrow"
+          /></a>
+          <a
+            class="button button-primary button-arrow-only"
+            id="featured-rightArrow"
+            ><img src="./src/assets/icons/White-Arrow.svg" alt="white-arrow"
+          /></a>
+        </div>
+      </div>
+      <div class="featured__houseContent">
+        <!-- ITEM 1 -->
+        <div class="featured__houseContent-item">
+          <div
+            class="featured__houseContent-item-img featured-img featured-img-1"
+          >
+            <span class="labels labels-danger"
+              ><img
+                src="./src/assets/icons/Red-Fire.svg"
+                alt="red-fire"
+              />Popular</span
+            >
+          </div>
+          <div class="featured__houseContent-item-name">
+            <h3 class="heading heading-3">roselands house</h3>
+            <h4 class="heading heading-4">$ 35.000.000</h4>
+          </div>
+          <div class="featured__houseContent-item-person">
+            <img
+              src="./src/assets/images/featured-person-1.svg"
+              alt="featured-house-person-1"
+            />
+            <div class="featured__houseContent-item-person-info">
+              <span class="subtitle">Dianne Russell</span>
+              <span class="label label-regular grey-2"
+                >Manchester, Kentucky</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="featured__houseContent-item">
+          <div
+            class="featured__houseContent-item-img featured-img featured-img-2"
+          >
+            <span class="labels labels-info"
+              ><img
+                src="./src/assets/icons/Blue-House.svg"
+                alt="blue-house"
+              />New house</span
+            >
+          </div>
+          <div class="featured__houseContent-item-name">
+            <h3 class="heading heading-3">woodlandside</h3>
+            <h4 class="heading heading-4">$ 20.000.000</h4>
+          </div>
+          <div class="featured__houseContent-item-person">
+            <img
+              src="./src/assets/images/featured-person-2.svg"
+              alt="featured-house-person-2"
+            />
+            <div class="featured__houseContent-item-person-info">
+              <span class="subtitle">Robert Fox</span>
+              <span class="label label-regular grey-2"
+                >Dr. San Jose, South Dakota</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ITEM 3 -->
+        <div class="featured__houseContent-item">
+          <div
+            class="featured__houseContent-item-img featured-img featured-img-3"
+          >
+            <span class="labels labels-success"
+              ><img
+                src="./src/assets/icons/Green-Wallet.svg"
+                alt="green-wallet"
+              />Best deals</span
+            >
+          </div>
+          <div class="featured__houseContent-item-name">
+            <h3 class="heading heading-3">the old lighthouse</h3>
+            <h4 class="heading heading-4">$ 44.000.000</h4>
+          </div>
+          <div class="featured__houseContent-item-person">
+            <img
+              src="./src/assets/images/featured-person-3.svg"
+              alt="featured-house-person-3"
+            />
+            <div class="featured__houseContent-item-person-info">
+              <span class="subtitle">Ronald Richards</span>
+              <span class="label label-regular grey-2"
+                >Santa Ana, Illinois</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ITEM 4 -->
+        <div class="featured__houseContent-item">
+          <div
+            class="featured__houseContent-item-img featured-img featured-img-4"
+          >
+            <span class="labels labels-danger"
+              ><img
+                src="./src/assets/icons/Red-Fire.svg"
+                alt="red-fire"
+              />Popular</span
+            >
+          </div>
+          <div class="featured__houseContent-item-name">
+            <h3 class="heading heading-3">Cosmo's House</h3>
+            <h4 class="heading heading-4">$ 22.000.000</h4>
+          </div>
+          <div class="featured__houseContent-item-person">
+            <img
+              src="./src/assets/images/featured-person-4.svg"
+              alt="featured-house-person-1"
+            />
+            <div class="featured__houseContent-item-person-info">
+              <span class="subtitle">Jenny Wilson</span>
+              <span class="label label-regular grey-2"
+                >Preston Rd. Inglewood, Maine 98380</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR SECTION -->
+    <section class="tour">
+      <div class="tourBlur">
+        <img src="./src/assets/bgBlurs/TourUp.svg" class="tourBlur-1" />
+        <img src="./src/assets/bgBlurs/TourDown.svg" class="tourBlur-2" />
+      </div>
+      <div class="tour__main">
+        <div class="tour__info">
+          <div class="tour__info__content">
+            <div class="tour__info__content-subtitle">
+              <div class="tour__info__content-subtitle-line">&nbsp;</div>
+              <span class="secondary-color label label-regular"
+                >Ready to Sell!</span
+              >
+            </div>
+            <div class="tour__info__content-container">
+              <h2 class="heading heading-2">let's tour and see our house!</h2>
+              <p class="tour__info__content-para body grey-2">
+                Houses recommended by our partners that have been curated to
+                become the home of your dreams!
+              </p>
+              <span class="body body-medium-bold">House Detail</span>
+              <div class="tour__info__content-detailRow">
+                <div class="tour__info__content-detailRow-item">
+                  <img
+                    class="tour__info__content-detailRow-img"
+                    src="./src/assets/icons/Grey-bed.svg"
+                    alt="bed"
+                  /><span class="body body-medium">4 Bedrooms</span>
+                </div>
+                <div class="tour__info__content-detailRow-item">
+                  <img
+                    class="tour__info__content-detailRow-img"
+                    src="./src/assets/icons/Grey-bath.svg"
+                    alt="bath"
+                  /><span class="body body-medium">2 Bathrooms</span>
+                </div>
+              </div>
+              <div class="tour__info__content-detailRow">
+                <div class="tour__info__content-detailRow-item">
+                  <img
+                    class="tour__info__content-detailRow-img"
+                    src="./src/assets/icons/Grey-carpot.svg"
+                    alt="car"
+                  /><span class="body body-medium">1 Carport</span>
+                </div>
+                <div class="tour__info__content-detailRow-item">
+                  <img
+                    class="tour__info__content-detailRow-img"
+                    src="./src/assets/icons/Grey-stairs.svg"
+                    alt="bath"
+                  /><span class="body body-medium">2 Floors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tour__info__separator">&nbsp;</div>
+          <div class="tour__info__contact">
+            <div class="tour__info__contact-seller">
+              <img
+                src="./src/assets/images/featured-person-1.svg"
+                alt="seller"
+              />
+              <div class="tour__info__contact-seller-info">
+                <span class="subtitle">Dianne Russell</span>
+                <span class="label label-regular grey-2"
+                  >Manchester, Kentucky</span
+                >
+              </div>
+            </div>
+            <a class="button button-primary" href="#">
+              <img src="./src/assets/icons/White-phone.svg" alt="phone-icon" />
+              Contact Now
+            </a>
+          </div>
+        </div>
+        <div class="tour__images">
+          <img
+            src="./src/assets/images/tour-img-large.png"
+            alt="large-house-img"
+            class="tour__images-large"
+          />
+          <img
+            src="./src/assets/images/tour-img-med.png"
+            alt="large-house-img"
+            class="tour__images-med"
+          />
+          <div class="tour__images-smallContainer">
+            <img
+              src="./src/assets/images/tour-img-small1.png"
+              alt="large-house-img"
+              class="tour__images-smallContainer-item"
+            /><img
+              src="./src/assets/images/tour-img-small2.png"
+              alt="large-house-img"
+              class="tour__images-smallContainer-item"
+            />
+          </div>
+          <img
+            src="./src/assets/icons/Play.svg"
+            alt="play-icon"
+            class="tour__images-icon"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+      <div class="testimonials__subtitle">
+        <div class="testimonials__subtitle-line">&nbsp;</div>
+        <span class="secondary-color label label-regular">See Our Review</span>
+      </div>
+      <h2 class="testimonials__title heading heading-2">
+        what our user say about us
+      </h2>
+      <div class="testimonials__reviews">
+        <!-- FIRST REVIEW -->
+        <div class="testimonials__reviews__item">
+          <div class="testimonials__reviews__item-img testimonials-img-1">
+            &nbsp;
+          </div>
+          <div class="testimonials__reviews__item-card">
+            <div class="testimonials__reviews__item-card-text">
+              <h4 class="heading heading-4">my house sold out fast!</h4>
+              <p class="label label-regular grey-3">
+                I was finally able to sell my house quickly through Hounter by
+                immediately setting me up with people who wanted my house. I
+                also do not get a discount from the sale of my house. Awesome!
+              </p>
+            </div>
+            <div class="testimonials__reviews__item-card-personReview">
+              <div class="testimonials__reviews__item-card-personReview-info">
+                <img
+                  src="./src/assets/images/featured-person-1.svg"
+                  alt="person-review-1"
+                />
+                <div>
+                  <span class="label label-medium-bold">Dianne Russell</span>
+                  <span class="label label-small grey-2"
+                    >Manchester, Kentucky</span
+                  >
+                </div>
+              </div>
+              <div class="testimonials__reviews__item-card-personReview-rate">
+                <img src="./src/assets/icons/Star.svg" alt="star" />
+                <h4 class="heading heading-4">4.3</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SECOND REVIEW -->
+        <div class="testimonials__reviews__item">
+          <div class="testimonials__reviews__item-img testimonials-img-2">
+            &nbsp;
+          </div>
+          <div class="testimonials__reviews__item-card">
+            <div class="testimonials__reviews__item-card-text">
+              <h4 class="heading heading-4">
+                Best! I got the house I wanted through Hounter
+              </h4>
+              <p class="label label-regular grey-3">
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+            </div>
+            <div class="testimonials__reviews__item-card-personReview">
+              <div class="testimonials__reviews__item-card-personReview-info">
+                <img
+                  src="./src/assets/images/featured-person-4.svg"
+                  alt="person-review-1"
+                />
+                <div>
+                  <span class="label label-medium-bold">Jenny Wilson</span>
+                  <span class="label label-small grey-2">Manager Director</span>
+                </div>
+              </div>
+              <div class="testimonials__reviews__item-card-personReview-rate">
+                <img src="./src/assets/icons/Star.svg" alt="star" />
+                <h4 class="heading heading-4">4.6</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- THIRD REVIEW -->
+        <div class="testimonials__reviews__item">
+          <div class="testimonials__reviews__item-img testimonials-img-3">
+            &nbsp;
+          </div>
+          <div class="testimonials__reviews__item-card">
+            <div class="testimonials__reviews__item-card-text">
+              <h4 class="heading heading-4">
+                Through the Hounter, I can get a house for my self
+              </h4>
+              <p class="label label-regular grey-3">
+                By looking for information about what kind of house we want, we
+                managed to get the house we wanted very quickly, and directly
+                connected with the seller to be able to ask about the details,
+                very helpful!
+              </p>
+            </div>
+            <div class="testimonials__reviews__item-card-personReview">
+              <div class="testimonials__reviews__item-card-personReview-info">
+                <img
+                  src="./src/assets/images/featured-person-3.svg"
+                  alt="person-review-1"
+                />
+                <div>
+                  <span class="label label-medium-bold">Ronald Richards</span>
+                  <span class="label label-small grey-2"
+                    >Head of Marketing</span
+                  >
+                </div>
+              </div>
+              <div class="testimonials__reviews__item-card-personReview-rate">
+                <img src="./src/assets/icons/Star.svg" alt="star" />
+                <h4 class="heading heading-4">4.6</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND MORE SECTION -->
+    <section class="findMore">
+      <div class="findMoreBlur">
+        <img src="./src/assets/bgBlurs/FMoreUp.svg" class="findMoreBlur-1" />
+        <img src="./src/assets/bgBlurs/FMoreDown.svg" class="findMoreBlur-2" />
+      </div>
+      <div class="findMore__title">
+        <div class="findMore__title-subtitle">
+          <div class="findMore__title-subtitle-line">&nbsp;</div>
+          <span class="secondary-color label label-regular"
+            >See tips and trick from our partnership</span
+          >
+        </div>
+        <h2 class="findMore__title-heading heading heading-2">
+          find out more about selling and buying homes
+        </h2>
+      </div>
+      <div class="findMore__btn">
+        <a id="more-articles" class="button button-primary"> More Articles </a>
+      </div>
+      <div class="findMore__content">
+        <div class="findMore__leftContent">
+          <!-- FIRST Find-More CARD -->
+          <div class="findMore__leftContent-card">
+            <img
+              src="./src/assets/images/findMore-1.png"
+              alt="apartment-photo"
+            />
+            <div class="findMore__leftContent-card-info">
+              <div class="findMore__leftContent-card-info-person">
+                <img
+                  src="./src/assets/images/featured-person-4.svg"
+                  alt="dianne-photo"
+                />
+                <span class="label label-regular grey-2">Dianne Russell</span>
+              </div>
+              <p class="subtitle">
+                The things we need to check when we want to buy a house
+              </p>
+              <div class="findMore__leftContent-card-info-time">
+                <img src="./src/assets/icons/clock.svg" alt="clock-icon" />
+                <span class="label label-regular grey-2"
+                  >4 min read | 25 Apr 2021</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- SECOND Find-More CARD -->
+          <div class="findMore__leftContent-card">
+            <img
+              src="./src/assets/images/findMore-2.png"
+              alt="apartment-photo"
+            />
+            <div class="findMore__leftContent-card-info">
+              <div class="findMore__leftContent-card-info-person">
+                <img
+                  src="./src/assets/images/featured-person-3.svg"
+                  alt="dianne-photo"
+                />
+                <span class="label label-regular grey-2">Courtney Henry</span>
+              </div>
+              <p class="subtitle">
+                7 Ways to distinguish the quality of the house we want to buy
+              </p>
+              <div class="findMore__leftContent-card-info-time">
+                <img src="./src/assets/icons/clock.svg" alt="clock-icon" />
+                <span class="label label-regular grey-2"
+                  >6 min read | 24 Apr 2021</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- THIRD Find-More CARD -->
+          <div class="findMore__leftContent-card">
+            <img
+              src="./src/assets/images/findMore-3.png"
+              alt="apartment-photo"
+            />
+            <div class="findMore__leftContent-card-info">
+              <div class="findMore__leftContent-card-info-person">
+                <img
+                  src="./src/assets/images/featured-person-2.svg"
+                  alt="dianne-photo"
+                />
+                <span class="label label-regular grey-2"
+                  >Darlene Robertson</span
+                >
+              </div>
+              <p class="subtitle">
+                The best way to know the quality of the house we want to buy
+              </p>
+              <div class="findMore__leftContent-card-info-time">
+                <img src="./src/assets/icons/clock.svg" alt="clock-icon" />
+                <span class="label label-regular grey-2"
+                  >2 min read | 24 Apr 2021</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="findMore__rightContent">
+          <img
+            class="findMore__rightContent-img"
+            src="./src/assets/images/findMore-preview.png"
+            alt="preview-img"
+          />
+          <div class="findMore__rightContent-info">
+            <div class="findMore__rightContent-info-content">
+              <div class="findMore__rightContent-info-content-person">
+                <img
+                  src="./src/assets/images/featured-person-1.svg"
+                  alt="dianne-photo"
+                />
+                <span class="label label-regular">Cameron Williamson</span>
+              </div>
+              <span class="subtitle"
+                >12 Things to know before buying a house</span
+              >
+              <p class="body">
+                Want to buy a house but are unsure about what we should know,
+                here I will try to explain what we should know and check when we
+                want to buy a house
+              </p>
+            </div>
+            <div class="findMore__rightContent-info-time">
+              <img src="./src/assets/icons/clock.svg" alt="clock-icon" />
+              <span class="label label-regular grey-2"
+                >8 min read | 25 Apr 2021</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCCRIBE SECTION -->
+    <section class="subscribe">
+      <div class="subscribe__content">
+        <h2 class="heading heading-2 subscribe__content-heading">
+          subscribe for more info and update from hounter
+        </h2>
+        <div class="subscribe__content-form">
+          <img
+            class="subscribe__content-form-icon"
+            src="./src/assets/icons/Blue-mail.svg"
+            alt="mailbox-icon"
+          />
+          <span class="subscribe__content-form-text label label-medium grey-2"
+            >Your email here</span
+          >
+          <button class="subscribe__content-form-btn button button-primary">
+            Subscribe Now
+          </button>
+        </div>
+
+        <!-- SUBSCRIBE GENERAL IMGS  -->
+        <img
+          class="subscribe__content-img-1"
+          src="./src/assets/images/subscribe-1.png"
+          alt="subscribe-img-1"
+        />
+        <img
+          class="subscribe__content-img-2"
+          src="./src/assets/images/subscribe-2.png"
+          alt="subscribe-img-2"
+        />
+        <img
+          class="subscribe__content-img-3"
+          src="./src/assets/images/subscribe-3.png"
+          alt="subscribe-img-3"
+        />
+        <img
+          class="subscribe__content-img-4"
+          src="./src/assets/images/subscribe-4.png"
+          alt="subscribe-img-4"
+        />
+
+        <!-- SUBSCRIBE PERSONS LOGOS  -->
+        <img
+          class="subscribe__content-img-person subscribe__content-img-person1"
+          src="./src/assets/images/featured-person-1.svg"
+          alt="subscribe-person-1"
+        />
+        <img
+          class="subscribe__content-img-person subscribe__content-img-person2"
+          src="./src/assets/images/featured-person-2.svg"
+          alt="subscribe-person-2"
+        />
+        <img
+          class="subscribe__content-img-person subscribe__content-img-person3"
+          src="./src/assets/images/featured-person-3.svg"
+          alt="subscribe-person-3"
+        />
+        <img
+          class="subscribe__content-img-person subscribe__content-img-person4"
+          src="./src/assets/images/featured-person-4.svg"
+          alt="subscribe-person-4"
+        />
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form">
+      <div class="form__content">
+        <div class="form__content-left">
+          <h3 class="heading heading-3">would you like to join?</h3>
+          <div class="form__content-left-text">
+            <p class="body grey-3">
+              Quickly get three quotes from these local that people love in
+              online reviews.
+            </p>
+            <div class="form__content-left-separator">&nbsp;</div>
+            <span class="body grey-3"
+              >Pick the whose estimate suits you best.</span
+            >
+            <div class="form__content-left-separator">&nbsp;</div>
+            <p class="body grey-3">
+              We then make sure the work i done to your complete satisfaction.
+            </p>
+          </div>
+          <div class="form__content-left-img">
+            <div class="form__content-left-imgContainer">
+              <img
+                class="form__content-left-imgContainer-blur"
+                src="./src/assets/bgBlurs/FormBlur.svg"
+                alt="blur-form"
+              />
+              <img
+                class="form__content-left-imgContainer-bg"
+                src="./src/assets/images/form-background.svg"
+                alt="form-background"
+              />
+              <img
+                class="form__content-left-imgContainer-tab"
+                src="./src/assets/images/form-tab.svg"
+                alt="form-tab-img"
+              />
+              <img
+                class="form__content-left-imgContainer-hamm"
+                src="./src/assets/images/form-hammer.svg"
+                alt="form-hammer-icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form__content-right">
+          <!-- Name INPUT -->
+          <div class="form__content-right-input">
+            <span class="label label-medium">Name</span>
+            <input placeholder="Your name" type="text" />
+          </div>
+          <!-- Surname INPUT -->
+          <div class="form__content-right-input">
+            <span class="label label-medium">Surname</span>
+            <input placeholder="Your Surname" type="text" />
+          </div>
+          <!-- Education INPUT -->
+          <div class="form__content-right-input">
+            <label class="label label-medium">Education</label>
+            <input placeholder="Select one" type="text" />
+            <img
+              src="./src/assets/icons/Arrow-down.svg"
+              alt="Arrow-down-icon"
+            />
+          </div>
+          <!-- Message INPUT -->
+          <div class="form__content-right-input form__content-right-textArea">
+            <span class="label label-medium">Message</span>
+            <!-- <input type="text" /> -->
+            <textarea type="text" class="" placeholder="Message"></textarea>
+            <span
+              class="form__content-right-textArea-counter label label-samll grey-2"
+              >0/500</span
+            >
+          </div>
+          <div class="form__content-right-policy">
+            <img src="./src/assets/icons/Checked.svg" alt="checkbox-icon" />
+            <p class="label label-regular grey-3">
+              I give consent to the processing of my personal data given in the
+              contact form above under the terms and conditions of Grid Dynamics
+              Privacy Policy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+      <div class="footerBlur">
+        <img src="./src/assets/bgBlurs/FooterLeft.svg" class="footerBlur-1" />
+        <img src="./src/assets/bgBlurs/FooterRight.svg" class="footerBlur-2" />
+      </div>
+      <div class="footer__content">
+        <div class="footer__content-left">
+          <img
+            class="footer__content-left-img"
+            src="./src/assets/logos/Logo.svg"
+            alt="hounter-logo"
+          />
+          <div class="footer__content-left-info">
+            <p class="label label-regular">
+              We provide information about properties such as houses, villas and
+              apartments to help people find their dream home
+            </p>
+            <div class="footer__content-left-info-socials">
+              <img src="./src/assets/icons/FB.svg" alt="facebook-icon" />
+              <img src="./src/assets/icons/TW.svg" alt="twitter-icon" />
+              <img src="./src/assets/icons/PIN.svg" alt="pinterest-icon" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__content-right">
+          <!-- First footer column -->
+          <div class="footer__content-right-column">
+            <span class="subtitle">Property</span>
+            <ul>
+              <li class="label label-regular grey-2">House</li>
+              <li class="label label-regular grey-2">Apartment</li>
+              <li class="label label-regular grey-2">Villa</li>
+            </ul>
+          </div>
+          <!-- Second footer column -->
+          <div class="footer__content-right-column">
+            <span class="subtitle">Article</span>
+            <ul>
+              <li class="label label-regular grey-2">New Article</li>
+              <li class="label label-regular grey-2">Popular Article</li>
+              <li class="label label-regular grey-2">Most Read</li>
+              <li class="label label-regular grey-2">Tips & Tricks</li>
+            </ul>
+          </div>
+          <!-- Third footer column -->
+          <div class="footer__content-right-column">
+            <span class="subtitle">Contact</span>
+            <ul>
+              <li class="label label-regular grey-2">
+                2464 Royal Ln. Mesa, New Jersey 45463
+              </li>
+              <li class="label label-regular grey-2">(671) 555-0110</li>
+              <li class="label label-regular grey-2">info@hounter.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer cookies banner -->
+      <div class="footer__cookiesBanner">
+        <div class="footer__cookiesBanner-content">
+          <img
+            src="./src/assets/icons/Green-cookie.svg"
+            alt="Green-cookie-icon"
+          />
+          <span
+            class="footer__cookiesBanner-content-text body body-medium-bold"
+          >
+            We are using cookies
+          </span>
+        </div>
+        <a
+          ><img
+            class="footer__cookiesBanner-exit"
+            src="./src/assets/icons/Cross.svg"
+            alt="cross-icon"
+        /></a>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
